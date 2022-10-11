@@ -8,6 +8,7 @@
 body {
     margin: 0px;
     font-family: 'segoe ui';
+    background-color: #F5F5F5;
   }
   
   .nav {
@@ -62,6 +63,7 @@ body {
     grid-template-columns: repeat(2,1fr);
     gap: 30px;
     padding: 0px 50px;
+    background-color: white;
 }
 .banner-left{
     display: flex;
@@ -89,9 +91,7 @@ body {
 /* main */
 
 
-.main-container{
-    background-color:#F5F5F5;
-}
+
 .seletion-title h1{
     text-align: center;
     font-size: 40px;
@@ -149,10 +149,10 @@ body {
 .middles{
     width: 280px;
     padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 30px 35px white;
+    border-radius: 5px;
+    box-shadow:white;
     margin: 0 auto;
-    background-color: white;
+    background-color:white;
 }
 .middle-banner img{
     width: 100%;
@@ -162,6 +162,66 @@ body {
 }
 
 /* exit main  */
+
+/* section  */
+.seletion-title-two{
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+.middle-section{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.middle-images img{
+    width: 500px;
+    height: 300px; 
+    margin-left: 30px;
+}
+.hedding-text{
+    margin-left: 150px;
+   font-size: 20px;
+   
+}
+ /* 3rd section  */
+.section-secend{
+    margin-top: 40px;
+}
+.hedding-text2{
+    
+   font-size: 20px;
+   margin-left: 150px;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width:600px) {
     .nav > .nav-btn {
