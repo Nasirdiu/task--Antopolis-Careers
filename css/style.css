@@ -1,8 +1,11 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Lobster&family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     margin: 0px;
     font-family: 'segoe ui';
   }
@@ -10,7 +13,7 @@
   .nav {
     height: 50px;
     width: 100%;
-    background-color: #4d4d4d;
+    background-color: white;
     position: relative;
   }
   
@@ -21,7 +24,7 @@
   .nav > .nav-header > .nav-title {
     display: inline-block;
     font-size: 22px;
-    color: #fff;
+    color: black;
     padding: 10px 10px 10px 10px;
   }
   
@@ -39,7 +42,7 @@
     display: inline-block;
     padding: 13px 10px 13px 10px;
     text-decoration: none;
-    color: #efefef;
+    color: black;
   }
   
   .nav > .nav-links > a:hover {
@@ -50,7 +53,97 @@
     display: none;
   }
   
-  @media (max-width:600px) {
+  /* banner */
+  .hilight-color{
+    color: #F72D57;
+}
+  .banner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    padding: 0px 50px;
+}
+.banner-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.banner-left h1{
+    font-size: 52px;
+}
+.banner-left p{
+    font-size: 18px;
+}
+.banner-photo{
+    display: flex;
+    justify-content: flex-end;
+}
+.banner-photo img{
+    width: 440px;
+    height: 414px;
+}
+
+/* exit banner */
+
+/* main */
+.seletion-title h1{
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.main-container{
+    background-color:#F5F5F5;
+}
+.middle-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.middle button{
+    background-color: #F72D57;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.middle{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    gap: 30px;
+}
+.right-position{
+    display: flex;
+    justify-content: flex-end;
+}
+.middles{
+    width: 280px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 30px 35px white;
+    margin: 0 auto;
+    background-color: white;
+}
+.middle-banner img{
+    width: 100%;
+}
+.middle-text{
+    text-align: center;
+}
+
+/* exit main  */
+
+@media (max-width:600px) {
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
