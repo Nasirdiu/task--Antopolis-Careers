@@ -87,21 +87,42 @@ body {
 /* exit banner */
 
 /* main */
+
+
+.main-container{
+    background-color:#F5F5F5;
+}
 .seletion-title h1{
     text-align: center;
     font-size: 40px;
 
 }
+.main-box button{
+    background-color: white;
+    border: none;
+    color: red;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 280px; 
+    height: 65px;  
+}
 
-.main-container{
-    background-color:#F5F5F5;
+.main-box button:hover{
+    background-color:#F72D57 ;
+    color: white;
 }
 .middle-btn{
     display: flex;
     justify-content: center;
 }
 
-.middle button{
+.middle-btn button{
     background-color: #F72D57;
     border: none;
     color: white;
@@ -114,7 +135,6 @@ body {
     cursor: pointer;
     border-radius: 10px;
 }
-
 
 .middle{
     display: grid;
