@@ -46,14 +46,16 @@ body {
     color: black;
   }
   
-  .nav > .nav-links > a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  
   .nav > #nav-check {
     display: none;
   }
   
+  .nav-sing{
+    background-color:#F72D57 ;
+    border-radius: 5px;
+   
+  }
+ 
   /* banner */
   .hilight-color{
     color: #F72D57;
@@ -173,6 +175,7 @@ body {
     display: flex;
     justify-content:center;
     align-items: center;
+    margin-top: 40px;
 }
 .middle-images img{
     width: 500px;
@@ -195,7 +198,91 @@ body {
  
 }
 
+/* footer  */
+footer {
+    background-color:#F72D57;
+    color: white;
+    font-size: 16px;
+  }
+  footer * {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+  }
+  .row {
+    padding: 1em 1em;
+  }
+  .row.primary {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-items: stretch;
+    margin-top: 50px;
+  }
+  .column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    min-height: 15em;
+  }
+  h3 {
+    width: 100%;
+    text-align: left;
+    color: white;
+    font-size: 1.4em;
+    white-space: nowrap;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  li:not(:first-child) {
+    margin-top: 0.8em;
+  }
+  ul li a {
+    color:white;
+    text-decoration: none;
+  }
+  ul li a:hover {
+    color: #2a8ded;
+  }
+  .about p {
+    text-align: justify;
+    line-height: 2;
+    margin: 0;
+  }
+  input,
+  button {
+    font-size: 1em;
+    padding: 1em;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  div.social {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.4em;
+    flex-direction: row;
+    margin-top: 0.5em;
+  }
+  .social i {
+    color: white;
+  }
+  
 
+ 
+
+  @media screen and (max-width: 850px) {
+    .row.primary {
+      grid-template-columns: 1fr;
+    }
+  
+  }
 
 
 
@@ -237,24 +324,27 @@ body {
       padding: 13px;
     }
     .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: #F72D57;
+      color: white;
     }
     .nav > .nav-btn > label > span {
       display: block;
       width: 25px;
       height: 10px;
       border-top: 2px solid #eee;
+      color: white;
     }
     .nav > .nav-links {
       position: absolute;
       display: block;
       width: 100%;
-      background-color: #333;
+      background-color:#F72D57;
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
       top: 50px;
       left: 0px;
+      color: white;
     }
     .nav > .nav-links > a {
       display: block;
