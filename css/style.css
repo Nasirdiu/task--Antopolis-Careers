@@ -92,7 +92,13 @@ body {
 
 /* main */
 
-
+.main-img{
+  background-image: url(../img/Ellipse\ 157.png);
+  background-repeat: no-repeat;
+  padding: 25px;
+  background-color: #FCFCFC;
+    
+}
 
 .seletion-title h1{
     text-align: center;
@@ -108,7 +114,7 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 10px 15px;
+    margin-left: 25px;
     cursor: pointer;
     border-radius: 5px;
     width: 280px; 
@@ -119,10 +125,7 @@ body {
     background-color:#F72D57 ;
     color: white;
 }
-.middle-btn{
-    display: flex;
-    justify-content: center;
-}
+
 
 .middle-btn button{
     background-color: #F72D57;
@@ -136,6 +139,7 @@ body {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 10px;
+    width: 200px;
 }
 
 .middle{
@@ -144,24 +148,9 @@ body {
     justify-content: center;
     gap: 30px;
 }
-.right-position{
-    display: flex;
-    justify-content: flex-end;
-}
-.middles{
-    width: 280px;
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow:white;
-    margin: 0 auto;
-    background-color:white;
-}
-.middle-banner img{
-    width: 100%;
-}
-.middle-text{
-    text-align: center;
-}
+
+
+
 
 /* exit main  */
 
@@ -274,39 +263,63 @@ footer {
     color: white;
   }
   
-
+  @media (max-width:688px) {
+    .banner{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .banner-left h1{
+        font-size: 25px;
+        padding: 20px 0;
+    }
+    .middle,
+    .contact,
+    .middle-section,
+    header{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
  
+ }
+ /* swiper  */
+   
 
-  @media screen and (max-width: 850px) {
+ .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow:white;
+  margin: 20px;
+}
+
+.swiper-slide img {
+  width: 250px;
+}
+.swiper-pagination{
+  margin-top: 40px;
+  padding: 20px;
+}
+      /* swiper  */
+
+  @media screen and (max-width: 600px) {
     .row.primary {
-      grid-template-columns: 1fr;
+      grid-template-columns: 2fr;
     }
   
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
